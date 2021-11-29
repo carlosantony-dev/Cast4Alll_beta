@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Bem Vindo!</title>
+    <link href="/home_estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/script.js"></script>
+</head>
+<body>
+    <div id="logo_esq">
+        <a href="../logado"><img src="/logo_fundo.png", width="100", height="100" style="display: flex; position: relative; left: 45%;"/></a>
+    </div>
+    <header id="header">
+        <h2>Home</h2>
+        <h2>Perfil</h2>
+        <button id="logout"><a href="/login">SAIR </a></button>
+    </header>
+
+    <div class="main">
+        <div class="main_wrapper">
+            <div class="main_row">
+
+                <div class="main_row_title"><h2>Top's do momento</h2></div>
+        
+                <div class="main_col">
+                    <a onclick="load_track(0)"><img src="/flow.jpg" width="150", height="150"/></a>
+                    <h3 id="msc1">Flow Podcast</h3>
+                </div>
+
+                <div class="main_col">
+                    <a onclick="load_track(1)"><img src="/podpah.png" width="150", height="150"/></a>
+                    <h3>Podpah</h3>
+                    
+                </div>
+
+                <div class="main_col">
+                    <a onclick="load_track(2)"><img src="/panico.png" width="150", height="150"/></a>
+                    <h3>Pânico Jovem Pan</h3>
+                   
+                </div>
+
+                <div class="main_col">
+                    <a onclick="load_track(3)"><img src="/os_socios.jpg" width="150", height="150"/></a>
+                    <h3>Os sócios</h3>
+                    
+                </div>
+
+                <div class="main_col">
+                    <a onclick="load_track(4)"><img src="/podize.jpg" width="150", height="150"/></a>
+                    <h3>Podize</h3>
+                    
+                </div>
+
+                <div class="main_col">
+                    <a onclick="load_track(5)"><img src="/galacticas.jpg" width="150", height="150"/></a>
+                    <h3>Podcast Galáctico</h3>
+                   
+                </div>
+
+                
+
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <audio id="msc"></audio>
+        <div class="lg_footer">
+            <img id="image_footer" style="position: absolute; margin: 1%;" src="" width="60", height="60"/>
+        </div>
+
+        <div class="volume">
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+         </div>
+
+        <p id="title">Conteúdo</p>
+        <p id="artist">Artista</p>
+        <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+        <div id="barra">
+            <input type="range" id="duration_slider" style="position: absolute; left: 30%; width: 80%; " min="0" max="100" value="0">
+        </div> 
+        <div class="controls">
+            <button id="back_Song" style="cursor: pointer;"><i onclick="AnteriorMusica()" class="fa fa-step-backward"></i></button>
+            <button id="play_btn" style="cursor: pointer;" onclick="justPlay()"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button id= "next_Song" style="cursor: pointer;"><i onclick="proxMusica()" class="fa fa-step-forward"></i></button>
+        </div>
+    </footer>
+</body>
+</html>

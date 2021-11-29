@@ -1,0 +1,132 @@
+#logo{
+    margin-left: 5vh;
+}
+
+h3 {
+    position: absolute;
+    color: #ffffff;
+    top: 5%;
+    left: 160px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+body {
+    background-image: url('../Imagens/imgPerfil.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.options {
+    position: unset;
+    margin-top: 140px;
+    margin-left: 100px;
+    margin-right: 140px;
+    float: right;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#opcao{
+    top: 30%;
+}
+
+#perfil-conteiner{
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    margin-left: auto;
+    margin-right: 60px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+} 
+
+#form {
+    background-color: #FFF;
+    height: 600px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:center;
+}
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    margin-right:15px;
+    float:left;
+}
+input {
+    height: 20px;
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    border: #ffffff;
+    padding: 10px;
+    }
+
+hr{
+    border: 0;
+    border-top: 1px solid #6b6b6b;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #FFF;
+    background-color: blue;
+    cursor: pointer;
+
+}
+
+input[type='file']{
+    display: none;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.max-width{
+    max-width: 500px;
+    width: 100%;
+}
+#imgPhoto{
+    position: absolute;
+    margin-left:-300px;
+    margin-top: 10;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    background-color: rgb(207, 207, 207);
+    border: 5px solid rgb(196, 196, 196);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .3s;  
+}
+#imgPhoto:hover{
+    background-color: #cccccc;
+    border: 5px solid #000 ;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/loginEstilo.css" rel="stylesheet">
+
+
+    <title>Tela de Login</title>
+
+</head>
+
+<body>
+
+    
+    <div id="lad_esq">
+        <div id="logo">
+            <img src="/logo_fundo.png", width="400", height="400"/>
+        </div>
+    
+    </div>
+
+    <div id="lad_dir">
+
+        <div class="texto">
+            <h1>Login </h1>
+        </div>
+
+        <div class="frase">
+            <h1>Entre para continuar</h1>
+        </div>
+
+        <a id="cad" href="/cadastrar"><i>Não é cadastrado? Cadastre agora mesmo!</i></a>
+
+        <div id="linha_h"></div>
+        
+        
+        
+
+        <form action="/auth" method="post">
+            <div id="e-mail">
+                Entre com seu email:
+            </div>
+            <input id="e-mail" name="email" placeholder="Digite seu email aqui" style="color: black; size: 10px;"><br><br>
+            
+            <div id="senha">
+                Entre com sua senha
+            </div>            
+            <input  id="senha" name="senha" type="password" placeholder="Digite sua senha aqui" style="color: black; size: 10px;"><br><br>
+            
+    
+            <a id="rec_senha" href="/password">Esqueceu sua senha? Clique aqui</a>
+    
+            <button type="submit">Login</button>
+        
+        </form>
+    </div> 
+    
+    
+</body>
+</html>

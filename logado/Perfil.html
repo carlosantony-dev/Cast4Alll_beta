@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./estilos/perfil.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Seja Bem-Vindo, Caster!</title>
+</head>
+<body>
+        <img id="logo" src="./Imagens/logo_fundo.png" width="100px" height="100px">
+        <h3>Cast4All</h3>
+        <h3 class="options">Inicio</h3>
+        <h3 class="options">perfil</h3>
+        <h3 class="options">Ouvir</h3>   
+        
+        <div class="max-width">
+            <div class="imageContainer">
+                <img src="./Imagens/camera.png" alt="selecionar uma imagem" id="imgPhoto">
+            </div>
+        </div>
+        <input type="file" id="fImage" name="fImage" accept='image/*'>  
+
+    </div>
+        <script src="./script_perfil.js"></script>        
+
+
+    <div id="perfil-conteiner">
+        <h1>Editar perfil</h1>
+        <form action="">
+                <div>
+                    <label for="Nome">Nome de Usuario</label>
+                    <input type="text" name="nome"  id="nome" placeholder="Nome ">
+                </div><hr>                
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email"  id="email" placeholder="email">
+                </div><hr>
+                <div>
+                    <label for="text">data de nascimento</label>
+                    <input type="date" name="dataNascimento"  id="dataNascimento" >
+                </div><hr>            
+                <div>
+                    <label id="perfilEditar" for="text">Telefone</label>
+                    <input type="text" name="telefone"  id="telefone" placeholder="Telefone">
+                </div><hr>   
+                <input type="submit" value="Salvar">
+        </form>
+    </div>
+</body>
+</html>
